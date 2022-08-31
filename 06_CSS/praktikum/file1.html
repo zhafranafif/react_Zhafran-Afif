@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
         body{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             margin: 50px 0 0 50px;
             color: white;
+            font-family: 'Slabo 27px', serif;
+            font-size: 20px;
         }
         #component-1{
             display: flex;
@@ -26,15 +29,15 @@
             margin-top: 30px;
             width: 350px;
         }
-        #box-1{
+        .box-1{
             background-color: red;
             padding: 30px;
         }
-        #box-2{
+        .box-2{
             background-color: blue;
             padding: 30px;
         }
-        #box-3{
+        .box-3{
             background-color: green;
             padding: 0 10px 100% 10px;
             border-radius: 12px;
@@ -43,12 +46,12 @@
 </head>
 <body>
   <div id="component-1">
-  <div id="box-1">Saya adalah box red berukuran 100 px</div>
-  <div id="box-2">Saya adalah box blue berukuran 100 px</div>
+  <div class="box-1">Saya adalah box red berukuran 100 px</div>
+  <div class="box-2">Saya adalah box blue berukuran 100 px</div>
   </div>
 
   <div id="component-2">
-  <div id="box-3">Saya adalah box green berukuran 300 px </div>
+  <div class="box-3">Saya adalah box green berukuran 300 px </div>
   </div>
 </body>
 </html>
