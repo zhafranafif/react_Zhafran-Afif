@@ -1,9 +1,9 @@
-import Index from './component';
+import Home from './component/home';
 
 function App() {
   return (
     <>
-      <Index />
+      <Home />
     </>
 
   );
