@@ -13,16 +13,16 @@ class Kendaraan {
         kecepatanPerJam = 0
 }
 class Mobil extends Kendaraan{
-tambahKecepatan(kecepatanBaru) {
+        totalRoda = 4
+        tambahKecepatan(kecepatanBaru) {
         
         this.kecepatanPerJam = this.kecepatanPerJam + kecepatanBaru
         return this.kecepatanPerJam
         
 }
-berjalan() {
-        
+
+        berjalan() {
         this.tambahKecepatan(10)
-        
         }
 }
     let mobilCepat = new Mobil()
