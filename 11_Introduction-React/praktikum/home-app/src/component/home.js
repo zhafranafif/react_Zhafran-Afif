@@ -2,7 +2,7 @@ import React from "react";
 import LogoAtas from "../asset/img/logo-ALTA@2x.png"
 import Profile from "../asset/img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg"
 
-function Home() {
+function HomePage() {
     return (
         <div className="home-background">
         <header>
@@ -44,4 +44,4 @@ function Home() {
       </div>
     )
 }
-export default Home
+export default HomePage
