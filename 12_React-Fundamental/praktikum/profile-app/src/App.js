@@ -9,7 +9,7 @@ function App() {
       <div>
         <ToDoHeader text="To Do List" />
       </div>
-      <div className='todo-page'>
+      <div>
         <ToDoPage todos={toDoData} />
       </div>
     </div>
