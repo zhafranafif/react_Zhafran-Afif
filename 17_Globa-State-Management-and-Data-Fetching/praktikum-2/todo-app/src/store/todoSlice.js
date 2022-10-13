@@ -10,10 +10,10 @@ export const fetchAllTodo = createAsyncThunk('fetch/todo', async () => {
     console.log(err)
   }
 })
-export const createAllTodo = createAsyncThunk('post/todo', async () => {
+export const createAllTodo = createAsyncThunk('post/todo', async (tittle) => {
   try {
-    const response = await todoAPI.createTodo()
-    return response.data.insert_todos_todos
+    const response = await todoAPI.createTodo(tittle)
+    return response.data.insert_todos_todos.returning[0]
   } catch (err) {
     console.log(err)
   }
@@ -21,7 +21,7 @@ export const createAllTodo = createAsyncThunk('post/todo', async () => {
 export const deleteTodoList = createAsyncThunk('delete/todo', async (id) => {
   try {
     const response = await todoAPI.deletingTodo(id)
-    return response
+    return response.data.delete_todos_todos.returning[0]
   } catch (err) {
     console.log(err)
   }
@@ -52,8 +52,10 @@ export const todoSlice = createSlice({
       .addCase(createAllTodo.fulfilled, (state, action) => {
         state.status = "succeeded"
         state.data.push(action.payload)
-        state.error = action.error.message
-    })
+      })
+      .addCase(deleteTodoList.fulfilled, (state, action) => {
+        state.data = state.data.filter((item) => item.id !== action.payload.id)
+      })
     },
     reducers: {
       onAddHandler: (state, action) => {
