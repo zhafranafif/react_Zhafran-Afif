@@ -10,11 +10,13 @@ function FormPage() {
 
   const onSubmitHandler = (event) => {
     event.preventDefault()
+    // const formData = new FormData(event.target)
+    // const text = formData.get('text')
     const formIsEmpty = tittle.length === 0
     if (formIsEmpty) {
       alert('Anda harus memasukkan Todo terlebih dahulu!')
     } else {
-      dispatch(createAllTodo({tittle}))
+      dispatch(createAllTodo(tittle))
       setTittle('')
     }
   }

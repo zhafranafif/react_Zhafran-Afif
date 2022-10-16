@@ -1,6 +1,6 @@
 import { axiosInstance } from "../config/axiosInstance";
 
- const todoAPI = {
+const todoAPI = {
     async getAllTodo() {
         try {
             const response = await axiosInstance.get('/todo')
@@ -8,10 +8,10 @@ import { axiosInstance } from "../config/axiosInstance";
         } catch (err) {
             console.log(err.response)
         }
-     },
-     async createTodo() {
+    },
+    async createTodo(tittle) {
          try {
-             const response = await axiosInstance.post('/todo')
+             const response = await axiosInstance.post('/todo', {tittle})
              return response
          } catch (err) {
              console.log(err.response)
