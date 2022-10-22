@@ -16,7 +16,7 @@ const ListPassenger = props => {
                     <td>Nama</td>
                     <td>Umur</td>
                     <td>Jenis Kelamin</td>
-                    <td bgcolor="white" className="removeBorder"></td>
+                    <td>Action</td>
                 </thead>
                 {props.data?.passenger_pasengerList.map(item => (
                     <ListItem
@@ -24,7 +24,7 @@ const ListPassenger = props => {
                         data={item}
                         hapusPengunjung={props.hapusPengunjung}
                     />
-                ))}
+                ))}     
             </table>
         </div>
     )
