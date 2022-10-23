@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../src/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <title>Shoe.Seeker</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Shoe<span>.</span>seeker</a>
+              <img src="../assets/img/28484177_7431864.svg" alt="logo" class="logo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse  justify-content-lg-end me-lg-5" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="#">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="#">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-main">
+                    <h1>Apps That Will<br>
+                        Make Your Life So<br> 
+                        Much Easier</h1>
+                    <h3>Product Delivery Is Easier Ever</h3>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ratione qui quaerat doloribus rem voluptas ex repudiandae similique, obcaecati quis!</h6>
+                    <div class="hero-button">
+                        <button class="apple"><i class="bi bi-apple"></i>Available On the<br>App Store</button>
+                        <button class="play"><i class="bi bi-google-play"></i>Available On the<br>Play Store</button>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img src="../assets/img/24758592_shoe_store_02.jpg" alt="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-us" id="contactUs">
+            <h2>Contact Us</h2>
+            <div class="contact-us__container">
+                <div class="contact-us__img">
+                    <img src="../assets/img/5421734_2839829.svg" alt="">
+                </div>
+                <div class="contact-us__form">
+                    <form onsubmit="inputSubmit()" id="Form">
+                        <div class="mb-3">
+                            <label for="exampleInputFirstName1" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="exampleInputFirstName1" name="firstName">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputLastName1" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="exampleInputLastName1" name="lastName">
+                          </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" name="email">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputMessage1" class="form-label">What can web help you with?</label>
+                          <textarea type="text" class="form-control" id="exampleInputMessage1" rows="4" name="message" placeholder="Please drop your message in here!"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+    </main>
+
+    <footer class="footer bg-dark" id="footer">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+              <div class="col">
+                <div class="p-3 footer-main__content">
+                    <a class="navbar-brand" href="#" style="color: rgb(127, 121, 121);">Shoe<span>.</span>seeker</a>
+                    <p><i>Shoe.Seeker is the app that will make your life so much easier to find sneakers</i></p>
+                    <div class="social-media">
+                      <ul>
+                          <li>
+                              <a href="https://t.me/zhafranafif" target="_blank">
+                                  <i class="bi bi-telegram"></i>
+                              </a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/zhafranafiff/" target="_blank">
+                              <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/zhafranafiff" target="_blank">
+                            <i class="bi bi-twitter"></i>
+                          </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/zhafranafif" target="_blank">
+                          <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 footer-main__link">
+                    <h4>Visit the Following Link Below!</h2>
+                    <div class="link-pages">
+                      <ul>
+                        <li>
+                          <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li>
+                          <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li>
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li>
+                          <a class="nav-link" href="#">About Us</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 footer-main__contact">
+                    <h4>Our Contact is Down Below!</h4>
+                    <div class="contact-link">
+                      <h5>Cikarang</h5>
+                      <h5>Jawa Barat, 17530</h5>
+                      <h5>shoe.seeker@gmail.com</h5>
+                      <h5><span>+62 812 8980 3547</span></h5>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+    <div class="copyright-footer">
+      <p>&copy; 2022 Shoe<span>.</span>seeker | All Right Reserved</p>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
